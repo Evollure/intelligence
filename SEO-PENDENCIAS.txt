@@ -1,0 +1,29 @@
+PENDÊNCIAS DE SEO — Evollure Intelligence Landing Page
+======================================================
+
+1. AJUSTAR URLs PARA O DOMÍNIO REAL
+   - Arquivo: index.html
+   - Trocar "https://evollure.com/intelligence" pelo domínio real em:
+     * <link rel="canonical">
+     * <meta property="og:url">
+   - Trocar "https://evollure.com" no schema Organization
+
+2. CRIAR IMAGEM OG (Open Graph)
+   - Nome: og-intelligence.png
+   - Dimensões: 1200 x 630px
+   - Uso: preview ao compartilhar link no WhatsApp, LinkedIn, Facebook, Twitter/X
+   - Sugestão de conteúdo: logo Evollure + headline "Cada call esconde dinheiro. A gente encontra." em fundo escuro (#050505)
+   - Após criar, fazer upload no servidor e confirmar que os caminhos abaixo estão corretos:
+     * <meta property="og:image">
+     * <meta name="twitter:image">
+
+3. PREENCHER REDES SOCIAIS NO SCHEMA
+   - Arquivo: index.html
+   - Localizar o JSON-LD "Organization" e preencher o campo "sameAs" com URLs das redes:
+     * Exemplo: "sameAs": ["https://instagram.com/evollure", "https://linkedin.com/company/evollure"]
+
+4. VALIDAR APÓS PUBLICAÇÃO
+   - Testar Open Graph: https://developers.facebook.com/tools/debug/
+   - Testar Twitter Card: https://cards-dev.twitter.com/validator
+   - Testar Structured Data: https://search.google.com/test/rich-results
+   - Testar SEO geral: https://pagespeed.web.dev/
