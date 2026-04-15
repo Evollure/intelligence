@@ -2,33 +2,33 @@
 <html lang="pt-BR" style="scroll-behavior: smooth;"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evollure Intelligence | IA que Analisa Calls e Mostra Onde Seu Time Perde Dinheiro</title>
+    <title>Evollure | IA que Analisa Calls e Mostra Onde Seu Time Perde Dinheiro</title>
     <meta name="description" content="Plataforma de inteligência comercial com IA que transcreve e avalia cada call do seu time contra os critérios do seu negócio. Score por vendedor, coaching baseado em dados, dashboard em tempo real. Para franquias, seguros, SaaS, energia solar e mais.">
-    <meta name="keywords" content="análise de calls com IA, inteligência comercial, transcrição de calls, avaliação de vendedor, coaching de vendas com dados, score de vendas, análise de ligações, IA para vendas, gestão comercial, Evollure Intelligence, gravação de calls, performance de vendas, dashboard comercial">
+    <meta name="keywords" content="análise de calls com IA, inteligência comercial, transcrição de calls, avaliação de vendedor, coaching de vendas com dados, score de vendas, análise de ligações, IA para vendas, gestão comercial, Evollure, gravação de calls, performance de vendas, dashboard comercial">
     <meta name="author" content="Evollure">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#E8570F">
-    <meta name="apple-mobile-web-app-title" content="Evollure Intelligence">
-    <link rel="canonical" href="https://evollure.com/intelligence">
+    <meta name="apple-mobile-web-app-title" content="Evollure">
+    <link rel="canonical" href="https://evollure.com">
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Evollure Intelligence | Cada call esconde dinheiro. A gente encontra.">
+    <meta property="og:title" content="Evollure | Cada call esconde dinheiro. A gente encontra.">
     <meta property="og:description" content="IA que transcreve e avalia cada call contra os critérios do seu negócio. Score por vendedor, por critério, em tempo real. Coaching baseado em dados, não em achismo.">
-    <meta property="og:url" content="https://evollure.com/intelligence">
-    <meta property="og:image" content="https://evollure.com/og-intelligence.png">
+    <meta property="og:url" content="https://evollure.com">
+    <meta property="og:image" content="https://evollure.com/og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Evollure Intelligence — Plataforma de IA para análise de calls comerciais">
+    <meta property="og:image:alt" content="Evollure — Plataforma de IA para análise de calls comerciais">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Evollure">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Evollure Intelligence | Cada call esconde dinheiro. A gente encontra.">
+    <meta name="twitter:title" content="Evollure | Cada call esconde dinheiro. A gente encontra.">
     <meta name="twitter:description" content="IA que transcreve e avalia cada call contra os critérios do seu negócio. Score por vendedor, por critério, em tempo real.">
-    <meta name="twitter:image" content="https://evollure.com/og-intelligence.png">
-    <meta name="twitter:image:alt" content="Evollure Intelligence — Plataforma de IA para análise de calls comerciais">
+    <meta name="twitter:image" content="https://evollure.com/og.png">
+    <meta name="twitter:image:alt" content="Evollure — Plataforma de IA para análise de calls comerciais">
 
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
@@ -48,7 +48,7 @@
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Evollure Intelligence",
+        "name": "Evollure",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Windows, macOS",
         "description": "Plataforma de inteligência comercial que transcreve, analisa e avalia calls de vendas usando IA contra critérios personalizados do negócio.",
@@ -207,11 +207,6 @@
             100% { stroke-dashoffset: 0; }
         }
 
-        @keyframes orbitalSpin {
-            from { transform: translate(200px, 200px) scale(0.4) rotate(0deg); }
-            to { transform: translate(200px, 200px) scale(0.4) rotate(360deg); }
-        }
-
         @keyframes coreGlow {
             0%, 100% { r: 10; opacity: 1; }
             50% { r: 12; opacity: 0.8; }
@@ -251,8 +246,12 @@
 
         .animate-wave-flow { animation: waveFlow 3s ease-in-out infinite; }
         .animate-wave-amplitude { animation: waveAmplitude 2.5s ease-in-out infinite; stroke-dasharray: 6 4; }
-        .animate-orbital-spin { animation: orbitalSpin 12s linear infinite; transform-origin: 0 0; }
         .animate-core-pulse { animation: corePulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+        @keyframes coreSpin {
+            from { transform: translate(200px, 200px) rotate(0deg); }
+            to { transform: translate(200px, 200px) rotate(360deg); }
+        }
+        .animate-core-spin { animation: coreSpin 8s linear infinite; transform-origin: 0 0; }
         .animate-node-appear { animation: nodeAppear 0.6s ease-out forwards; transform: scale(0); transform-box: fill-box; transform-origin: center; }
         .animate-badge-slide { animation: badgeSlideIn 0.5s ease-out forwards; opacity: 0; }
         .animate-line-draw { stroke-dasharray: 400; stroke-dashoffset: 400; animation: lineDrawOn 1.5s ease-out forwards; }
@@ -288,17 +287,8 @@
     <nav id="navbar" class="fixed top-0 w-full z-[60] transition-all duration-300 h-16 sm:h-20 flex items-center bg-transparent border-b border-transparent">
         <div class="max-w-[960px] mx-auto w-full px-4 sm:px-8 flex justify-between items-center">
             <!-- Left: Logo & Badge -->
-            <a href="#" class="flex items-center gap-0 sm:gap-0.5 relative z-[70]">
-                <svg viewBox="0 0 120 120" class="w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0" aria-hidden="true">
-                    <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="4" fill="none"></ellipse>
-                    <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="3.5" fill="none" transform="rotate(60 60 60)" opacity="0.65"></ellipse>
-                    <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="3" fill="none" transform="rotate(120 60 60)" opacity="0.35"></ellipse>
-                    <circle cx="60" cy="60" r="6" fill="#E8570F"></circle>
-                </svg>
-                <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-3 pt-0.5">
-                    <span class="text-base sm:text-lg font-normal text-white tracking-tight leading-none">Evollure</span>
-                    <span class="font-mono text-xs uppercase text-[#E8570F] tracking-widest leading-none mt-1 sm:mt-0">Intelligence</span>
-                </div>
+            <a href="#" class="flex items-baseline relative z-[70]" aria-label="Evollure">
+                <span class="text-[22px] sm:text-[26px] font-medium text-white leading-none" style="letter-spacing: -1px;">evollure</span><span class="text-[26px] sm:text-[30px] font-bold text-[#E8570F] leading-none">.</span>
             </a>
             
             <!-- Right: Links, CTA & Mobile Menu Toggle -->
@@ -344,7 +334,7 @@
             <!-- Left: Content -->
             <div class="w-full md:w-[55%] flex flex-col gap-5">
                 <div class="animate-fade-up opacity-0" style="animation-fill-mode: forwards;">
-                    <span class="uppercase text-xs text-[#E8570F] tracking-[0.2em] font-mono">Evollure Intelligence</span>
+                    <span class="uppercase text-xs text-[#E8570F] tracking-[0.2em] font-mono">Inteligência Comercial</span>
                 </div>
                 <h1 class="text-[2.25rem] md:text-6xl font-semibold text-white tracking-tighter leading-[1.1] md:leading-[1.15] animate-fade-up opacity-0 delay-100 md:text-balance" style="animation-fill-mode: forwards;">
                     Cada call do seu time<br>
@@ -362,7 +352,7 @@
                 </div>
             </div>
             
-            <!-- Right: Narrative Visual (Voice -> Processing -> Intelligence) -->
+            <!-- Right: Narrative Visual (Voice -> Processing -> Output) -->
             <div class="w-full md:w-[45%] h-[280px] md:h-[400px] relative animate-fade-in opacity-0 delay-300 flex justify-end" style="animation-fill-mode: forwards;">
                 <svg viewBox="0 0 450 400" class="w-full h-full max-w-[450px]" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
                     <!-- Filters -->
@@ -385,42 +375,37 @@
                             </feMerge>
                         </filter>
                         <!-- Path for traveling particle -->
-                        <path id="dataFlowPath" d="M 220 200 L 280 200 L 420 200" fill="none"></path>
+                        <path id="dataFlowPath" d="M 228 200 L 280 200 L 420 200" fill="none"></path>
                     </defs>
 
                     <!-- Left: Chaos / Human Voice (Bezier Curves) -->
                     <!-- Curve 1 (Top) -->
-                    <path d="M 0 160 C 50 110, 100 240, 200 180" fill="none" stroke="url(#waveGrad)" stroke-width="2" class="animate-wave-amplitude animate-wave-flow" style="animation-delay: 0s, 0s;"></path>
+                    <path d="M 0 160 C 50 110, 100 240, 172 200" fill="none" stroke="url(#waveGrad)" stroke-width="2" class="animate-wave-amplitude animate-wave-flow" style="animation-delay: 0s, 0s;"></path>
                     <!-- Curve 2 (Middle) -->
-                    <path d="M 0 200 C 60 200, 120 150, 200 200" fill="none" stroke="#E8570F" stroke-width="1.5" opacity="0.6" class="animate-wave-flow" style="animation-delay: 0.5s;"></path>
+                    <path d="M 0 200 C 60 200, 120 150, 172 200" fill="none" stroke="#E8570F" stroke-width="1.5" opacity="0.6" class="animate-wave-flow" style="animation-delay: 0.5s;"></path>
                     <!-- Curve 3 (Bottom) -->
-                    <path d="M 0 240 C 80 280, 140 160, 200 220" fill="none" stroke="#E8570F" stroke-width="1" opacity="0.4" class="animate-wave-flow" style="animation-delay: 1s;"></path>
+                    <path d="M 0 240 C 80 280, 140 160, 172 200" fill="none" stroke="#E8570F" stroke-width="1" opacity="0.4" class="animate-wave-flow" style="animation-delay: 1s;"></path>
 
-                    <!-- Center: Ember Glow Behind Knot -->
-                    <circle cx="200" cy="200" r="30" fill="#E8570F" opacity="0.3" filter="url(#emberGlow)">
+                    <!-- Center: Ember Glow Behind Core -->
+                    <circle cx="200" cy="198" r="30" fill="#E8570F" opacity="0.3" filter="url(#emberGlow)">
                         <animate attributeName="r" values="30;40;30" dur="4s" repeatCount="indefinite"></animate>
                         <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"></animate>
                     </circle>
 
-                    <!-- Center: The Core / Processing Knot -->
-                    <g class="animate-orbital-spin">
-                        <ellipse cx="0" cy="0" rx="42" ry="18" stroke="#E8570F" stroke-width="4" fill="none"></ellipse>
-                        <ellipse cx="0" cy="0" rx="42" ry="18" stroke="#E8570F" stroke-width="3.5" fill="none" transform="rotate(60)" opacity="0.65"></ellipse>
-                        <ellipse cx="0" cy="0" rx="42" ry="18" stroke="#E8570F" stroke-width="3" fill="none" transform="rotate(120)" opacity="0.35"></ellipse>
-                        <circle cx="0" cy="0" r="10" fill="#E8570F" filter="url(#nodeGlow)" class="animate-core-pulse"></circle>
-                    </g>
+                    <!-- Center: The Core / Static "e" mark -->
+                    <text x="200" y="198" text-anchor="middle" dominant-baseline="middle" fill="#E8570F" font-family="'PP Neue Montreal', sans-serif" font-size="58" font-weight="500" style="letter-spacing: -2px;">e</text>
 
                     <!-- Right: Order / Extracted Data (Rigid Lines & Nodes) -->
                     <!-- Top Line -->
-                    <path d="M 220 200 L 260 120 L 420 120" fill="none" stroke="#333333" stroke-width="1" class="animate-line-draw" style="animation-delay: 0.3s;"></path>
+                    <path d="M 228 200 L 260 120 L 420 120" fill="none" stroke="#333333" stroke-width="1" class="animate-line-draw" style="animation-delay: 0.3s;"></path>
                     <!-- Middle Line -->
-                    <path d="M 220 200 L 280 200 L 420 200" fill="none" stroke="#555555" stroke-width="1.5" class="animate-line-draw" style="animation-delay: 0.6s;"></path>
+                    <path d="M 228 200 L 280 200 L 420 200" fill="none" stroke="#555555" stroke-width="1.5" class="animate-line-draw" style="animation-delay: 0.6s;"></path>
                     <!-- Bottom Line -->
-                    <path d="M 220 200 L 260 280 L 420 280" fill="none" stroke="#333333" stroke-width="1" class="animate-line-draw" style="animation-delay: 0.9s;"></path>
+                    <path d="M 228 200 L 260 280 L 420 280" fill="none" stroke="#333333" stroke-width="1" class="animate-line-draw" style="animation-delay: 0.9s;"></path>
 
                     <!-- Traveling Data Particle -->
                     <circle r="2.5" fill="#E8570F" opacity="0">
-                        <animateMotion dur="4s" repeatCount="indefinite" path="M 220 200 L 280 200 L 420 200"></animateMotion>
+                        <animateMotion dur="4s" repeatCount="indefinite" path="M 228 200 L 280 200 L 420 200"></animateMotion>
                         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="4s" repeatCount="indefinite"></animate>
                     </circle>
 
@@ -570,7 +555,7 @@
                     <div class="w-2 h-2 bg-[#E8570F]"></div>
                     <span class="font-mono text-[10px] text-[#777777] uppercase tracking-[0.2em]">A solução</span>
                 </div>
-                <p class="text-[15px] text-[#999999] leading-[1.9]">O Evollure Intelligence ouve cada uma dessas 800 calls. Analisa contra as regras do <span class="text-white font-semibold">SEU</span> processo comercial. E te entrega num dashboard o que levaria semanas pra descobrir: quem tá performando, quem tá custando dinheiro e onde exatamente o time precisa melhorar.</p>
+                <p class="text-[15px] text-[#999999] leading-[1.9]">A Evollure ouve cada uma dessas 800 calls. Analisa contra as regras do <span class="text-white font-semibold">SEU</span> processo comercial. E te entrega num dashboard o que levaria semanas pra descobrir: quem tá performando, quem tá custando dinheiro e onde exatamente o time precisa melhorar.</p>
 
                 <!-- Visual: mini bar chart showing visibility -->
                 <div class="flex items-end gap-[3px] mt-6 h-8">
@@ -611,7 +596,7 @@
                     transformado em inteligência.
                 </h2>
                 <p class="text-sm md:text-base text-[#999999] leading-[1.9] max-w-[520px] mt-4">
-                    O Cérebro Comercial é o coração do Evollure Intelligence. Antes de analisar uma única call, nós mapeamos junto com você as diretrizes comerciais da sua empresa — os critérios que definem uma boa venda no SEU negócio.<br><br>
+                    O Cérebro Comercial é o coração da Evollure. Antes de analisar uma única call, nós mapeamos junto com você as diretrizes comerciais da sua empresa — os critérios que definem uma boa venda no SEU negócio.<br><br>
                     Não são métricas genéricas. São os seus critérios, com os seus pesos, refletindo o seu processo.
                 </p>
             </div>
@@ -710,6 +695,71 @@
         </div>
     </section>
 
+    <!-- 5.5 VEJA POR DENTRO (Demo Vídeo) -->
+    <section id="demo" class="py-24 md:py-32 bg-[#050505] relative border-b border-[#1A1A1A] overflow-hidden">
+        <!-- Ember glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#E8570F] opacity-[0.04] blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-[960px] mx-auto px-8 relative">
+            <div class="text-center mb-12 reveal-up">
+                <span class="font-mono text-xs text-[#E8570F] uppercase tracking-[0.2em] block mb-4">Veja Por Dentro</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight leading-[1.2] mb-6 max-w-[680px] mx-auto text-balance">
+                    Não é promessa.<br>
+                    <span class="font-semibold italic text-[#E8570F]">É o que acontece depois de cada call.</span>
+                </h2>
+                <p class="md:text-base leading-[1.8] text-sm text-[#999999] max-w-[560px] mx-auto">
+                    Um tour rápido pela Evollure por dentro — como ela escuta, estrutura e devolve a inteligência que seu time comercial nunca teve tempo de extrair.
+                </p>
+            </div>
+
+            <!-- Video Container -->
+            <div class="relative reveal-up">
+                <!-- Outer frame glow -->
+                <div class="absolute -inset-[1px] bg-gradient-to-b from-[#E8570F]/30 via-[#E8570F]/10 to-transparent rounded-2xl blur-sm opacity-60 pointer-events-none"></div>
+
+                <div class="relative rounded-2xl overflow-hidden border border-[#1A1A1A] bg-[#0A0A0A] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)]">
+                    <video
+                        id="demo-video"
+                        controls
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        class="w-full h-auto block"
+                    >
+                        <source src="evollure-demo.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo HTML5. <a href="evollure-demo.mp4" class="text-[#E8570F] underline">Baixe o vídeo</a>.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Micro-bullets -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 reveal-up">
+                <div class="flex items-start gap-3">
+                    <span class="iconify text-[#E8570F] text-xl mt-0.5 flex-shrink-0" data-icon="ph:check-circle-fill"></span>
+                    <p class="text-sm text-[#CCCCCC] leading-[1.6]">Transcrição e diagnóstico automático de cada call</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="iconify text-[#E8570F] text-xl mt-0.5 flex-shrink-0" data-icon="ph:check-circle-fill"></span>
+                    <p class="text-sm text-[#CCCCCC] leading-[1.6]">Objeções mapeadas call a call, vendedor a vendedor</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="iconify text-[#E8570F] text-xl mt-0.5 flex-shrink-0" data-icon="ph:check-circle-fill"></span>
+                    <p class="text-sm text-[#CCCCCC] leading-[1.6]">Dashboard que o gestor abre de manhã e já sabe o que fazer</p>
+                </div>
+            </div>
+
+            <!-- Secondary CTA -->
+            <div class="text-center mt-14 reveal-up">
+                <a href="https://wa.me/5517981757508?text=Quero%20a%20Evollure%20rodando%20no%20meu%20time" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-[#E8570F] transition-colors group">
+                    <span>Quero isso rodando no meu time</span>
+                    <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="ph:arrow-right"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- 6. O ECOSSISTEMA -->
     <section id="ecossistema" class="py-24 md:py-32 bg-[#050505] relative border-b border-[#1A1A1A]">
         <div class="max-w-[960px] mx-auto px-8 relative">
@@ -719,7 +769,7 @@
                     Da gravação ao relatório.<br>
                     <span class="font-semibold italic text-[#E8570F]">Tudo conectado.</span>
                 </h2>
-                <p class="md:text-base leading-[1.8] text-sm text-[#999999] max-w-[520px]">O Evollure Intelligence não é só um dashboard. É um ecossistema que cobre todo o processo, da captura da call até a decisão de coaching.</p>
+                <p class="md:text-base leading-[1.8] text-sm text-[#999999] max-w-[520px]">A Evollure não é só um dashboard. É um ecossistema que cobre todo o processo, da captura da call até a decisão de coaching.</p>
             </div>
 
             <!-- Path Timeline -->
@@ -793,7 +843,7 @@
                     você vai <span class="font-semibold italic text-[#E8570F]">enxergar.</span>
                 </h2>
                 <p class="text-sm md:text-base text-[#999999] leading-[1.8] max-w-[520px]">
-                    O dashboard do Evollure Intelligence não mostra só números. Ele conta a história da sua operação.
+                    O dashboard da Evollure não mostra só números. Ele conta a história da sua operação.
                 </p>
             </div>
 
@@ -909,7 +959,7 @@
     <section id="para-quem" class="py-24 md:py-32 bg-[#050505] border-b border-[#1A1A1A]">
         <div class="max-w-[960px] mr-auto ml-auto px-4 sm:px-8">
             <div class="mb-16 text-center md:text-left reveal-up">
-                <span class="font-mono text-xs text-[#E8570F] uppercase tracking-[0.2em] block mb-4">Para quem é o Evollure Intelligence</span>
+                <span class="font-mono text-xs text-[#E8570F] uppercase tracking-[0.2em] block mb-4">Para quem é a Evollure</span>
                 <h2 class="md:text-4xl leading-[1.2] text-3xl font-semibold text-white tracking-tight">Se o seu time vende por telefone <br> ou por reuniões, isso foi feito <span class="font-semibold italic text-[#E8570F]">pra você.</span></h2>
             </div>
 
@@ -1039,24 +1089,20 @@
 
     <!-- 11. CTA FINAL -->
     <section class="md:py-48 overflow-hidden flex flex-col text-center bg-[#050505] pt-32 pb-32 relative items-center justify-center" id="cta">
-        <!-- Intense Glow & Watermark -->
+        <!-- Intense Glow -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none" style="background: radial-gradient(circle, rgba(232,87,15,0.10) 0%, transparent 60%);"></div>
-        
-        <!-- Orbital Knot Watermark -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] h-[240px] opacity-10 pointer-events-none">
-            <svg viewBox="0 0 120 120" class="w-full h-full" aria-hidden="true">
-                <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="4" fill="none"></ellipse>
-                <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="3.5" fill="none" transform="rotate(60 60 60)" opacity="0.65"></ellipse>
-                <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="3" fill="none" transform="rotate(120 60 60)" opacity="0.35"></ellipse>
-                <circle cx="60" cy="60" r="6" fill="#E8570F"></circle>
-            </svg>
-        </div>
 
         <div class="max-w-[800px] mx-auto px-8 relative z-10 reveal-up">
-            <h2 class="text-4xl md:text-5xl font-semibold text-white tracking-tighter leading-[1.1] mb-6">
-                Sua operação tem respostas<br>
-                que você <span class="font-semibold italic text-[#E8570F]">ainda não ouviu.</span>
-            </h2>
+            <div class="relative">
+                <!-- Minimal "e." Watermark — centered behind headline -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.07] pointer-events-none select-none flex items-baseline z-0" aria-hidden="true">
+                    <span class="text-white font-medium leading-none" style="font-size: 240px; letter-spacing: -10px;">e</span><span class="text-[#E8570F] font-bold leading-none" style="font-size: 260px;">.</span>
+                </div>
+                <h2 class="relative z-10 text-4xl md:text-5xl font-semibold text-white tracking-tighter leading-[1.1] mb-6">
+                    Sua operação tem respostas<br>
+                    que você <span class="font-semibold italic text-[#E8570F]">ainda não ouviu.</span>
+                </h2>
+            </div>
             <p class="md:text-base leading-[1.7] text-sm text-[#BBBBBB] max-w-[500px] mr-auto mb-10 ml-auto">Agende uma apresentação de 30 minutos. Nós vamos te mostrar exatamente como funcionaria para a sua empresa.</p>
             <a href="https://wa.me/5517981757508" target="_blank" rel="noopener noreferrer" class="hover:bg-white hover:text-[#050505] transition-colors duration-[250ms] text-base font-semibold text-white bg-[#E8570F] rounded-none mb-4 pt-4 pr-12 pb-4 pl-12 inline-block">Agendar conversa</a>
             <div class="uppercase text-xs text-[#999999] tracking-widest font-mono mt-2">
@@ -1069,15 +1115,11 @@
     <footer class="bg-[#050505]" style="border-top: 1px solid transparent; border-image: linear-gradient(90deg, transparent, #242424, transparent) 1;">
         <div class="max-w-[960px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
             <!-- Left -->
-            <div class="flex items-center gap-0.5">
-                <svg viewBox="0 0 120 120" class="w-5 h-5 flex-shrink-0" aria-hidden="true">
-                    <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="4" fill="none"></ellipse>
-                    <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="3.5" fill="none" transform="rotate(60 60 60)" opacity="0.65"></ellipse>
-                    <ellipse cx="60" cy="60" rx="42" ry="18" stroke="#E8570F" stroke-width="3" fill="none" transform="rotate(120 60 60)" opacity="0.35"></ellipse>
-                    <circle cx="60" cy="60" r="6" fill="#E8570F"></circle>
-                </svg>
-                <span class="text-base font-normal text-white tracking-tight pt-0.5">Evollure</span>
-                <span class="font-mono text-xs text-[#999999] uppercase ml-3 hidden sm:block pt-1 tracking-widest">IA aplicada a negócios</span>
+            <div class="flex items-center">
+                <span class="flex items-baseline" aria-label="Evollure">
+                    <span class="text-[20px] font-medium text-white leading-none" style="letter-spacing: -1px;">evollure</span><span class="text-[22px] font-bold text-[#E8570F] leading-none">.</span>
+                </span>
+                <span class="font-mono text-xs text-[#999999] uppercase ml-4 hidden sm:block tracking-widest">IA aplicada a negócios</span>
             </div>
             
             <!-- Center -->
@@ -1169,6 +1211,21 @@
             document.querySelectorAll('.reveal-up').forEach(el => {
                 revealObserver.observe(el);
             });
+
+            // 2b. Demo video: play when in view, pause when out
+            const demoVideo = document.getElementById('demo-video');
+            if (demoVideo) {
+                const videoObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            demoVideo.play().catch(() => {});
+                        } else {
+                            demoVideo.pause();
+                        }
+                    });
+                }, { threshold: 0.35 });
+                videoObserver.observe(demoVideo);
+            }
 
             // 3. SVG Timeline Scroll Progress
             const timelineSection = document.getElementById('ecossistema');
